@@ -42,6 +42,7 @@
     });
   }
   window.bvcApi = api;
+  window.bvcPageUrl = pageUrl;
 
   function signOut() {
     api('POST', '/api/logout').then(function () { location.href = '/'; });

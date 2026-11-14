@@ -16,7 +16,8 @@ module.exports = route({
       content: String(b.content || '').slice(0, 400000),
       summary: String(b.summary || '').slice(0, 1000),
       status: b.status === 'publish' ? 'publish' : 'draft',
-      image_id: b.image_id ? Number(b.image_id) : undefined,
+      image_id: b.image_id ? Number(b.image_id) : (b.image_id === 0 ? 0 : undefined),
+      meta: b.meta && typeof b.meta === 'object' ? b.meta : undefined,
     };
     return pass(await wp('POST', '/items', { as: s.uid, body }));
   },
