@@ -22,7 +22,19 @@ It is its own project: it is not part of the WordPress theme and has its own Git
 | `chartered_editorial/DESIGN.md` | Colours, fonts and spacing (teal and gold, matched to bvcglobal.com) |
 | `assets/bvc-logo.png` | The firm logo |
 
-Status: screen designs only (HTML). The working app is built after the new bvcglobal.com site is live.
+Status: sign-in, roles and the connection to the website work (tested against the Local site). The screens still show sample content; they are being connected one by one.
+
+## Run it on your computer
+
+1. Copy `.env.example` to `.env.local` and fill in `WP_URL`, `SESSION_SECRET` and `DASHBOARD_API_KEY`.
+2. `node dev-server.js`, then open http://localhost:3000
+3. The website (WP_URL) must have the BVC theme with the dashboard API and the same key in `wp-config.php` as `BVC_DASHBOARD_API_KEY`.
+
+For the live address the same three names go in Vercel under Settings > Environment Variables.
+
+Server code: `api/` (one file per route) and `lib/` (sign-in cookie, website connection). `assets/app.js` and `assets/login.js` run in the browser.
+
+Status of the original design note: the HTML screens came from Google Stitch. The working app is built after the new bvcglobal.com site is live.
 
 ## Rules for this repository
 
