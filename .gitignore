@@ -1,0 +1,11 @@
+# Secrets and local files, never committed
+.env
+.env.*
+*.pem
+*.key
+node_modules/
+.next/
+.vercel/
+*.log
+Thumbs.db
+.DS_Store

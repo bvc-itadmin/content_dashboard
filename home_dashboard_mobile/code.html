@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0B4F48", "inverse-primary": "#8FD0C5", "secondary": "#775a00", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#0D5A52", "secondary-fixed": "#ffdf99", "tertiary": "#003110", "inverse-on-surface": "#F2F6F5", "surface-variant": "#D3E5E1", "inverse-surface": "#20252B", "on-primary-fixed": "#06302B", "primary-container": "#106B62", "on-tertiary-fixed-variant": "#005320", "surface-container": "#E4F1EE", "on-surface-variant": "#3F4447", "tertiary-fixed": "#7ffc97", "primary-fixed": "#E4F1EE", "tertiary-container": "#004a1c", "background": "#FCFBF9", "surface-bright": "#FCFBF9", "on-error": "#ffffff", "surface-container-low": "#F2F8F6", "on-tertiary-fixed": "#002109", "on-tertiary-container": "#42c264", "surface-dim": "#D3DCDA", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ecc15a", "error": "#ba1a1a", "on-secondary-container": "#765900", "primary-fixed-dim": "#8FD0C5", "on-surface": "#111111", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#5a4300", "on-primary-container": "#9AD6CC", "on-error-container": "#93000a", "error-container": "#ffdad6", "surface": "#FCFBF9", "on-background": "#111111", "outline-variant": "#D2D8D6", "secondary-container": "#fed269", "tertiary-fixed-dim": "#62df7d", "surface-tint": "#106B62", "outline": "#626A6D", "surface-container-high": "#DAEAE6", "on-secondary-fixed": "#251a00", "surface-container-highest": "#D3E5E1" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "space-md": "1rem", "margin": "2rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem" }, "fontFamily": { "label-sm": ["Inter"], "body-lg": ["Inter"], "title": ["Inter"], "body": ["Inter"], "body-semibold": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "display": ["Inter"], "headline-lg": ["Inter"], "display-mobile": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"] }, "fontSize": { "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "title": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "body": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "body-semibold": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#FCFBF9;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body text-body text-on-surface min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Open Navigation Menu" class="w-11 h-11 flex items-center justify-center rounded-lg text-primary hover:bg-surface-container-high transition-colors focus:outline-none focus:bg-surface-container-high" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="bvc-logo.png" class="h-8 w-auto object-contain" src="../assets/bvc-logo.png"/><div class="hidden xs:flex flex-col ml-1"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BVC</span><span class="font-label-sm text-[10px] tracking-wider uppercase text-outline -mt-1">Content Mgr</span></div></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-tertiary-container"><span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-label-sm text-xs text-on-surface-variant font-semibold tracking-wide">WP Connected</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-gutter-mobile pt-16 pb-24 bg-surface"><div class="py-space-sm mb-space-sm flex items-center justify-between"><h1 class="font-headline-sm text-headline-sm text-primary tracking-tight">Home</h1></div><div class="flex flex-col w-full gap-space-md">
+<!-- Status & Sync Badge Strip -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">cloud_done</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">bvcglobal.com</span>
+</div>
+<span class="font-body text-[12px] text-on-surface-variant truncate">Connected to the website</span>
+</div>
+</div>
+<button aria-label="Refresh status" class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all flex items-center gap-1.5 text-primary" id="refresh-sync-btn" type="button">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-500" id="sync-icon">sync</span>
+<span class="font-label-sm text-[12px] hidden sm:inline">Check</span>
+</button>
+</div>
+<!-- Editorial Welcome Card -->
+<div class="relative overflow-hidden bg-primary-container text-on-primary rounded-xl p-space-md sm:p-space-lg shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs relative z-10">
+
+<h2 class="font-headline-md text-headline-md tracking-tight text-on-primary mt-1">Publications Hub</h2>
+<p class="font-body text-body text-surface-variant max-w-xl">
+        Manage corporate disclosures, statutory updates, and client advisories for BVC &amp; Co. clients.
+      </p>
+</div>
+</div>
+<!-- Publications Overview Metrics (4-Column Bento Card) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Overview</h3>
+<span class="font-body text-[12px] text-on-surface-variant">Live counts</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<!-- Total -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[12px]">Total</span>
+<span class="material-symbols-outlined text-[18px] text-primary">folder_open</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">28</span>
+<span class="font-body text-[11px] text-on-surface-variant">items</span>
+</div>
+</div>
+<!-- Online -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[12px]">Online</span>
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">check_circle</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-tertiary-container tracking-tight">22</span>
+<span class="font-body text-[11px] text-on-tertiary-container">published</span>
+</div>
+</div>
+<!-- Drafts -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[12px]">Drafts</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">pending_actions</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-secondary tracking-tight">5</span>
+<span class="font-body text-[11px] text-on-surface-variant">in review</span>
+</div>
+</div>
+<!-- Trash -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[12px]">Trash</span>
+<span class="material-symbols-outlined text-[18px] text-error">auto_delete</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-error tracking-tight">1</span>
+<span class="font-body text-[11px] text-on-surface-variant">archived</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Quick Actions: 2x2 Grid with min-h-[48px] tap targets -->
+<div class="flex flex-col gap-space-xs mt-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Quick Actions</h3>
+<span class="font-body text-[12px] text-on-surface-variant">Create new</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<!-- Add Blog -->
+<button class="group h-auto min-h-[56px] p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.98] transition-all flex flex-col items-start justify-center gap-1.5 shadow-sm text-left" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Add Blog</span>
+<span class="font-body text-[11px] text-on-surface-variant">Tax &amp; accounting post</span>
+</div>
+</button>
+<!-- Add Event -->
+<button class="group h-auto min-h-[56px] p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.98] transition-all flex flex-col items-start justify-center gap-1.5 shadow-sm text-left" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Add Event</span>
+<span class="font-body text-[11px] text-on-surface-variant">Webinar or seminar</span>
+</div>
+</button>
+<!-- Add Broadcast -->
+<button class="group h-auto min-h-[56px] p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.98] transition-all flex flex-col items-start justify-center gap-1.5 shadow-sm text-left" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Add Broadcast</span>
+<span class="font-body text-[11px] text-on-surface-variant">News or announcement</span>
+</div>
+</button>
+<!-- Add Insight -->
+<button class="group h-auto min-h-[56px] p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.98] transition-all flex flex-col items-start justify-center gap-1.5 shadow-sm text-left" type="button">
+<div class="w-8 h-8 rounded-lg bg-surface-container group-hover:bg-primary-container text-primary group-hover:text-on-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">insights</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-on-surface leading-tight">Add Insight</span>
+<span class="font-body text-[11px] text-on-surface-variant">Market advisory</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Secondary Actions: Manage Content & Manage Photos -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<a class="h-14 px-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.99] transition-all flex items-center justify-between shadow-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">library_books</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-primary leading-tight">Manage Content</span>
+<span class="font-body text-[11px] text-on-surface-variant">Filter, batch update, or take offline</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</a>
+<a class="h-14 px-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container active:scale-[0.99] transition-all flex items-center justify-between shadow-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-semibold text-body-semibold text-primary leading-tight">Manage Photos</span>
+<span class="font-body text-[11px] text-on-surface-variant">Media gallery &amp; partner assets</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</a>
+</div>
+<!-- Recently Updated Items List -->
+<div class="flex flex-col gap-space-xs mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg text-on-surface">Recently Updated</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">4 recent</span>
+</div>
+<button class="text-primary hover:text-primary-container font-label-sm text-[12px] flex items-center gap-0.5" type="button">
+        View All
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<!-- Items Stack -->
+<div class="flex flex-col gap-2">
+<!-- Item 1: Insight / Online -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm sm:p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-surface-container text-primary uppercase">Insight</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                Online
+              </span>
+<span class="font-body text-[11px] text-outline">Today, 09:42 AM</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface truncate">Q2 Corporate Tax Filing: Key Deductions &amp; Audit Triggers</h4>
+<span class="font-body text-[12px] text-on-surface-variant line-clamp-1">Practical advisory prepared by Senior Partner Tax Desk.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0 pt-2 sm:pt-0">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="hidden xs:inline">Preview</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Edit
+          </button>
+</div>
+</div>
+<!-- Item 2: Broadcast / Online -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm sm:p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-secondary-fixed text-on-secondary-fixed uppercase">Broadcast</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                Online
+              </span>
+<span class="font-body text-[11px] text-outline">Yesterday, 04:15 PM</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface truncate">Sample news headline</h4>
+<span class="font-body text-[12px] text-on-surface-variant line-clamp-1">Statutory announcement regarding modified Section 153 provisions.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0 pt-2 sm:pt-0">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="hidden xs:inline">Preview</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Edit
+          </button>
+</div>
+</div>
+<!-- Item 3: Event / Draft -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm sm:p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">event</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-surface-container text-primary uppercase">Event</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-surface-container text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Draft
+              </span>
+<span class="font-body text-[11px] text-outline">Oct 24, 02:00 PM</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface truncate">Annual Audit Readiness Workshop for CFOs &amp; Controllers</h4>
+<span class="font-body text-[12px] text-on-surface-variant line-clamp-1">In-person session draft scheduled for Islamabad Club hall.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0 pt-2 sm:pt-0">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="hidden xs:inline">Preview</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Edit
+          </button>
+</div>
+</div>
+<!-- Item 4: Blog / Draft -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm sm:p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">article</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-surface-container text-primary uppercase">Blog</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-secondary-container/60 text-on-secondary-container flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                In Review
+              </span>
+<span class="font-body text-[11px] text-outline">Oct 23, 11:18 AM</span>
+</div>
+<h4 class="font-body-semibold text-body-semibold text-on-surface truncate">Understanding Digital Services Tax: Practical Roadmap</h4>
+<span class="font-body text-[12px] text-on-surface-variant line-clamp-1">Pending partner review before client release.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0 pt-2 sm:pt-0">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="hidden xs:inline">Preview</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-[13px] flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Edit
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Toast / Feedback Banner (Hidden by default, triggered on action) -->
+<div class="fixed bottom-20 left-4 right-4 max-w-sm mx-auto bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center justify-between gap-3 opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="status-toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-label-sm text-[13px]" id="toast-message">WordPress Sync verified</span>
+</div>
+<button class="text-surface-variant hover:text-inverse-on-surface text-[18px]" id="close-toast" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    const refreshBtn = document.getElementById('refresh-sync-btn');
+    const syncIcon = document.getElementById('sync-icon');
+    const toast = document.getElementById('status-toast');
+    const toastMessage = document.getElementById('toast-message');
+    const closeToast = document.getElementById('close-toast');
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastMessage.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    if (refreshBtn && syncIcon) {
+      refreshBtn.addEventListener('click', () => {
+        syncIcon.classList.add('rotate-180');
+        setTimeout(() => {
+          syncIcon.classList.remove('rotate-180');
+          showToast('Sync updated: bvcglobal.com is live & responding (200 OK)');
+        }, 600);
+      });
+    }
+
+    if (closeToast) {
+      closeToast.addEventListener('click', () => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(16,107,98,0.06)]" data-active-classes="text-primary font-body-semibold"><div class="flex justify-between items-center h-16 px-space-xs max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors focus:outline-none text-primary font-body-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-[11px] leading-tight">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="add-content" href="#"><span class="material-symbols-outlined text-[22px]">post_add</span><span class="font-label-sm text-[11px] leading-tight">Add</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="manage-content" href="#"><span class="material-symbols-outlined text-[22px]">article</span><span class="font-label-sm text-[11px] leading-tight">Content</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="manage-photos" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-[11px] leading-tight">Photos</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-sm text-[11px] leading-tight">Settings</span></a></div></nav></body></html>

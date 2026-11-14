@@ -1,0 +1,740 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>BVC Content Manager - BVC &amp; Co. Chartered Accountants</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","inverse-on-surface":"#F2F6F5","surface-tint":"#106B62","on-surface":"#111111","on-secondary-fixed":"#251a00","tertiary-container":"#004a1c","background":"#FCFBF9","primary-container":"#106B62","surface-bright":"#FCFBF9","on-secondary-fixed-variant":"#5a4300","on-error-container":"#93000a","secondary-fixed-dim":"#ecc15a","on-background":"#111111","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#0D5A52","on-primary-fixed":"#06302B","surface-container-high":"#DAEAE6","on-tertiary-container":"#42c264","surface-container":"#E4F1EE","secondary-container":"#fed269","surface-dim":"#D3DCDA","surface-container-highest":"#D3E5E1","on-primary-container":"#9AD6CC","primary-fixed-dim":"#8FD0C5","on-tertiary-fixed":"#002109","inverse-primary":"#8FD0C5","surface":"#FCFBF9","tertiary":"#003110","on-surface-variant":"#3F4447","on-tertiary-fixed-variant":"#005320","primary":"#0B4F48","primary-fixed":"#E4F1EE","on-secondary":"#ffffff","outline":"#626A6D","secondary":"#775a00","error-container":"#ffdad6","secondary-fixed":"#ffdf99","on-error":"#ffffff","on-secondary-container":"#765900","outline-variant":"#D2D8D6","tertiary-fixed":"#7ffc97","tertiary-fixed-dim":"#62df7d","on-tertiary":"#ffffff","inverse-surface":"#20252B","error":"#ba1a1a","surface-variant":"#D3E5E1","surface-container-low":"#F2F8F6"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xs":"0.25rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem",margin:"2rem","space-md":"1rem","gutter-mobile":"1rem",gutter:"1.5rem","margin-mobile":"1rem"},fontFamily:{"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"display-mobile":["Inter"],title:["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],body:["Inter"],"body-semibold":["Inter"],display:["Inter"],"label-lg":["Inter"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],title:["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],body:["16px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"400"}],"body-semibold":["16px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],display:["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["16px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body text-body text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><img src="../assets/bvc-logo.png" alt="BVC &amp; Co. Chartered Accountants" class="h-9 w-auto object-contain"></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-body-semibold rounded-lg shadow-sm"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center" data-path="add-content" href="#">Add Content</a><a aria-current="page" class="px-space-md py-space-sm transition-colors min-h-[44px] inline-flex items-center bg-primary-container text-on-primary font-body-semibold rounded-lg shadow-sm" data-path="manage-content" href="#">Manage Content</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center" data-path="manage-photos" href="#">Manage Photos</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center" data-path="settings-admin" href="#">Settings (Admin)</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#dcfce7] border border-[#16a34a] text-[#166534] text-xs font-label-sm"><span class="w-2 h-2 rounded-full bg-[#16a34a] animate-pulse"></span><span>WP Connected: bvcglobal.com</span></div><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiP8zEUM_zwtzGk15WacakqkOKSFftiVqTk-bH3kqrkEY2j3xJD18xGxUp5cSRg4LFI3D0i5hvSMhbTZJ_mc_RYulPgztk4sqkf-q6mVyoZ1ltuzaQWXYI8tzbLfJzY1v-kSNyANJ5EA8oBnwEeftgC19bNLEYhy6GLVaOcolparUTYP9cNaxQnhpNANY8iya71BXHHqT5g6FUhpB1N_UzR753SlNqhqZBBKIIZCE"><div class="hidden sm:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Staff Member</span><span class="text-[11px] text-on-surface-variant font-body">Editor</span></div></div><a class="inline-flex items-center justify-center min-h-[44px] px-space-md py-space-sm rounded-lg border border-outline text-on-surface font-label-lg text-label-lg hover:bg-error-container hover:text-on-error-container hover:border-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-sm mr-1.5">logout</span>Log out</a></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-md flex flex-col gap-space-lg">
+<!-- Breadcrumb & Page Descriptor Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Content Manager</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Media &amp; Imagery</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary font-body-semibold">Manage Photos</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mt-space-xs">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Manage Photos &amp; Media Vault</h1>
+<p class="font-body text-body text-on-surface-variant max-w-3xl mt-1">
+            Curate, inspect, and upload firm imagery. Photos are automatically compressed and scaled client-side to 1920px (quality 0.82) before synchronizing with WordPress REST media endpoints.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="min-h-[48px] px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg transition-colors flex items-center gap-2 shadow-sm" id="trigger-dropzone-toggle">
+<span class="material-symbols-outlined text-xl">upload_file</span>
+<span>Batch Dropzone</span>
+</button>
+<button class="min-h-[48px] px-space-lg py-space-sm bg-primary-container hover:bg-primary text-on-primary rounded font-label-lg text-label-lg transition-colors flex items-center gap-2 shadow-md" id="upload-primary-btn">
+<span class="material-symbols-outlined text-xl">add_photo_alternate</span>
+<span>Upload New Photos</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Client-side Optimization Pipeline Notice -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start gap-space-md pl-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">tune</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-title text-title text-primary">Client-Side Compression Pipeline Active</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-label-sm bg-secondary-fixed text-on-secondary-fixed">Canvas 1920px (Q=0.82)</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Saved ~78% Payload</span>
+</div>
+<p class="font-body text-label-sm text-on-surface-variant mt-0.5">
+            Original RAW / DSLR photographs are dynamically downscaled and converted to WebP/high-density JPEG in your local browser thread before transmitting over the network.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-center">
+<span class="text-xs font-label-sm text-on-surface-variant hidden sm:inline">Engine: WebWorker Worker-04</span>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container" id="dismiss-pipeline">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Upload Dropzone Zone -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg flex flex-col items-center justify-center text-center transition-all duration-300 border border-outline-variant" id="dropzone-area">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-3xl">cloud_upload</span>
+</div>
+<h3 class="font-title text-title text-primary">Drag and drop high-resolution captures here</h3>
+<p class="font-body text-label-sm text-on-surface-variant max-w-md mt-1">
+        Supports JPG, PNG, and WebP up to 15MB each. Exif metadata automatically scrubbed for GDPR &amp; client confidentiality.
+      </p>
+<div class="mt-space-md flex items-center gap-space-sm">
+<label class="cursor-pointer min-h-[44px] px-space-md py-space-xs bg-primary-container text-on-primary rounded font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm hover:bg-primary transition-colors" for="file-input">
+<span class="material-symbols-outlined text-sm">folder_open</span>
+<span>Browse Workstation</span>
+</label>
+<input accept="image/png,image/jpeg,image/webp" class="hidden" id="file-input" multiple="" type="file">
+<span class="font-label-sm text-xs text-on-surface-variant">or paste from clipboard (Ctrl+V)</span>
+</div>
+<div class="w-full max-w-xl mt-space-md bg-surface-container-low rounded-lg p-space-xs flex items-center justify-between text-xs font-label-sm text-on-surface-variant">
+<span>Preserve ICC Profile: sRGB Chartered</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#16a34a]"></span> REST Endpoint Ready: /wp-json/wp/v2/media</span>
+</div>
+</div>
+<!-- Filter Pills, Search Bar, and Control Strip -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Search bar -->
+<div class="relative w-full md:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full min-h-[48px] pl-10 pr-4 bg-surface-container-low text-on-surface placeholder:text-on-surface-variant rounded text-label-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-inner transition-all" id="media-search" placeholder="Search photos by title, alt text, or filename..." type="text">
+</div>
+<!-- Sort dropdown & view toggles -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end flex-wrap">
+<label class="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider">Sort by</label>
+<div class="relative">
+<select class="min-h-[44px] pl-3 pr-8 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded focus:outline-none cursor-pointer appearance-none" id="sort-selector">
+<option value="newest">Newest First</option>
+<option value="size">File Size (Largest)</option>
+<option value="dimensions">Dimensions (Resolution)</option>
+<option value="used">Most Associated Posts</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-base">expand_more</span>
+</div>
+<div class="flex items-center bg-surface-container-low rounded p-0.5">
+<button class="p-2 rounded bg-surface-container-lowest text-primary shadow-sm" title="Grid Layout">
+<span class="material-symbols-outlined text-lg leading-none">grid_view</span>
+</button>
+<button class="p-2 rounded text-on-surface-variant hover:text-on-surface" title="List View (Audit Detail)">
+<span class="material-symbols-outlined text-lg leading-none">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pt-space-xs pb-1 text-label-sm">
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-body-semibold text-xs whitespace-nowrap shadow-sm">
+          All Media (142)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-xs whitespace-nowrap transition-colors">
+          Cover Headers (38)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-xs whitespace-nowrap transition-colors">
+          Author Portraits (14)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-xs whitespace-nowrap transition-colors">
+          Event Galleries (56)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface text-xs whitespace-nowrap transition-colors">
+          Statutory Diagrams (34)
+        </button>
+</div>
+</div>
+<!-- Main Workspace Layout: Photo Grid + Interactive Inspector Rail -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Photo Cards Grid (8 columns on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="photos-grid">
+<!-- Card 1: Boardroom Meeting -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer ring-2 ring-primary-container border border-outline-variant" data-alt="Senior Chartered Accountants and partners seated around an oak boardroom table deliberating fiscal strategies, warm corporate lighting with architectural glass background." data-date="May 14, 2025" data-id="48201" data-post="Sample blog headline" data-res="1920 x 1080 px" data-size="340 KB" data-title="Boardroom Strategic Tax Review 2025" data-url="/wp-content/uploads/2025/05/tax-boardroom-strategic-deliberation.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Senior Chartered Accountants and partners seated around an oak boardroom table deliberating fiscal strategies, warm corporate lighting with architectural glass background, navy blue suits, high-end editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgl5qtTSi5jaTY0l0AM70kIjhQeZug6TJy4knjVLeX7uaufz1LfyeWo-8kwEQTSgjSY83W7KeqtzJPygFbGpUjiWFx2v2FFrmIuHyMsyDijqE7nxiK_qwQqKFaujtb4lfTVgbHM_uWtzcvUsNIlAvl8NWIBRHwkcZb7Dfk8yRQP9NxBibmXOTau2_xTz5HiaBWuPKBX9afgrBDqwvzi7uoxvtIIVVamAWhbnVFsNY">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48201</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">Boardroom Strategic Tax Review 2025</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1920 × 1080 px</span>
+<span>•</span>
+<span>340 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: Sample blog headline">Used in: <span class="text-primary font-semibold">Sample photo</span></span>
+<span class="text-[10px] text-on-surface-variant">May 14, 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 2: London Headquarters Architectural -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer border border-outline-variant" data-alt="Architectural exterior shot of BVC &amp; Co. London financial district corporate office, neoclassical stone pillars meeting clean minimalist glass facade, soft morning sunlight." data-date="May 11, 2025" data-id="48194" data-post="Corporate Governance Annual Statement" data-res="1920 x 1280 px" data-size="412 KB" data-title="London Chartered Headquarters Facade" data-url="/wp-content/uploads/2025/05/bvc-london-headquarters-exterior.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural exterior shot of BVC &amp; Co. London financial district corporate office, neoclassical stone pillars meeting clean minimalist glass facade, soft morning sunlight, authoritative editorial corporate presence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMkVXo57rWAz2tm5JkI8p1elsJJ4w1DWqJ2534QL0uFjs2myECpcFs5UQ3Qfdnrf1GuW04rz7fsNWQbZV1UjwzjCHsam5JSksqzA-oKh8UUPLGU9Jnlyst8Tsop4j5iYeV14MOrMDVqzutsq7Nf8-8m7Rl8goAeKJzf1a76TH-d2CTiG_clMvAeUR1e0PksqXqbzXvofl0ir8DSkNEa6y4rf2a1mXPAzLxk8EjPg">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48194</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">London Chartered Headquarters Facade</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1920 × 1280 px</span>
+<span>•</span>
+<span>412 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: Corporate Governance Annual Statement">Used in: <span class="text-primary font-semibold">Corporate Gov</span></span>
+<span class="text-[10px] text-on-surface-variant">May 11, 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Corporate Tax Summit 2025 Keynote -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer border border-outline-variant" data-alt="Keynote presentation at the International Tax Advisory Summit, conference hall with stage projection displaying global taxation charts and partner speaker." data-date="May 08, 2025" data-id="48188" data-post="Pillar Two OECD Guidelines Summary" data-res="1920 x 1080 px" data-size="298 KB" data-title="Global Tax Summit Keynote Address" data-url="/wp-content/uploads/2025/05/oecd-pillar-two-symposium-keynote.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Keynote presentation at the International Tax Advisory Summit, auditorium conference hall with stage projection displaying global taxation charts, professional audience listening intently, navy ambient illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCeQXAfqzrStiNL2EqDAe-bWTxRBo39SWxoYbNH1d4D833zuOx64CBXPkBJMVQzKrBKm26Rb4DBC9KuPQ5jBbPfkPZCHViPLmwINE5_-UuBZE1kOxoJi2_3n3dNNA5AEy6krwFTEaD3to7ZI_nZN_odvJalY-KZi9CWj0iYP20Ihp6PdcDmZnIbVDBbcCBoUPlnhUVdys3EuiVQtjW-TUpdZCS-d2p814dd7hlCU4">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48188</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">Global Tax Summit Keynote</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1920 × 1080 px</span>
+<span>•</span>
+<span>298 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: Pillar Two OECD Guidelines Summary">Used in: <span class="text-primary font-semibold">OECD Pillar Two</span></span>
+<span class="text-[10px] text-on-surface-variant">May 08, 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Partner Portrait Staff Member -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer border border-outline-variant" data-alt="Official partner portrait of Staff Member FCA, wearing tailored midnight blue blazer, warm neutral studio background, authoritative and confident posture." data-date="May 02, 2025" data-id="48172" data-post="ICAI Cross-Border Direct Tax Commentary" data-res="1200 x 1200 px" data-size="185 KB" data-title="Staff Member FCA Partner Portrait" data-url="/wp-content/uploads/2025/05/partner-emma-vance-editorial-portrait.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Official partner portrait of Staff Member FCA, wearing tailored midnight blue blazer, warm neutral studio background, confident warm expression, professional chartered accountant editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDclTqqb-NM7MYZ2XE2x5B31cOmXi-7m4wU08RXhTd0zKVhni8Mt8n5k8_J3QZe1DwQHIi65cxRsq6LhzIMKoQxQJ0zViASlqppWF7M1zjBfduOBBQ3xQYa9oV6mdGHnzwxaRPZtbKSg8r3orTf1m90SvhDRbx2XXw0RKMvSnuU6O-prliWTugv5T81BEwl4NJ9esuX4HcSmp6lWKc2Im9cWQ9Wg3CXqJQEmUWkB2Y">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48172</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">Staff Member FCA Partner Portrait</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1200 × 1200 px</span>
+<span>•</span>
+<span>185 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: ICAI Cross-Border Direct Tax Commentary">Used in: <span class="text-primary font-semibold">Author Profile</span></span>
+<span class="text-[10px] text-on-surface-variant">May 02, 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Financial Charts Report Close-up -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer border border-outline-variant" data-alt="Tactile macro still life of printed audited financial reports with high-precision fountain pen, clean charts, and leather notebook on polished mahogany desk." data-date="Apr 28, 2025" data-id="48160" data-post="IFRS 18 Financial Statements Transition Guide" data-res="1920 x 1080 px" data-size="310 KB" data-title="Quarterly Statutory Audit Workpapers" data-url="/wp-content/uploads/2025/04/statutory-audit-workpapers-and-analytics.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tactile macro still life of printed audited financial reports with high-precision fountain pen, clean financial bar charts, and leather notebook on polished mahogany desk, warm editorial light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUjToyEbe3eWHGxPrwr_F47-Zn45RxqGOj9LGIWxqIj0uiQ98xQ07r2xAUFdRArBoatS4pCcyy3x2as6iMgWmGNYlsJ0jFk_85fIjLPuOANlu17WzZNZDc-xNAeRqFwcRcScwKEpLorl8sPRq0be9prurVPtU2jRIsOOewAC9tOEB-nrtjcWJpiERMpjIYsWx3pWhdY8qyc1z4HTixJugY_cnI-pMsiqUTq6u7cRo">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48160</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">Quarterly Statutory Audit Workpapers</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1920 × 1080 px</span>
+<span>•</span>
+<span>310 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: IFRS 18 Financial Statements Transition Guide">Used in: <span class="text-primary font-semibold">IFRS 18 Guide</span></span>
+<span class="text-[10px] text-on-surface-variant">Apr 28, 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Annual Audit Document Cover -->
+<div class="photo-card group bg-surface-container-lowest rounded-xl transition-all flex flex-col overflow-hidden cursor-pointer border border-outline-variant" data-alt="Embossed hardcover corporate audit publication with gold foil chartered stamp resting against deep navy architectural texture." data-date="Apr 22, 2025" data-id="48149" data-post="BVC Firm Transparency Disclosure 2024" data-res="1920 x 1080 px" data-size="445 KB" data-title="BVC Annual Transparency Report Cover" data-url="/wp-content/uploads/2025/04/bvc-annual-transparency-disclosure-cover.webp">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Embossed hardcover corporate audit publication with gold foil chartered stamp resting against deep navy architectural stone texture, warm dramatic side lighting, prestige publishing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArz-Wk7XUdTQfA5v-aPKsXhagrs-W1-XVdOl6Kcye37XrDOIpEbJhmE0__xAwqvOp1x8HHQ11b60L5wUq8X0IrGxbFhWjVYRL4d6ledFvgZ-2xkl-4WA_rWXl3dT9JGP8J21t0ixODgTA6-AVROu41yP2c2JWyqCd01FTGsiYA4qTSwvE8qBWB5kb-obWle0rxQJMLfli9BiV9bAA1jBpLoLuwqEYiUVUU_eSGMrE">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 p-2">
+<button class="action-inspect p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Quick Inspect">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="action-copy p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Copy WP URL">
+<span class="material-symbols-outlined text-base">link</span>
+</button>
+<button class="action-edit-alt p-2 bg-surface-container-lowest text-primary rounded-full hover:scale-110 transition-transform shadow" title="Edit WCAG Alt">
+<span class="material-symbols-outlined text-base">edit_note</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container-lowest/90 text-primary backdrop-blur-sm shadow-sm font-semibold">WP #48149</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h4 class="font-title text-title text-primary line-clamp-1 group-hover:text-primary-container transition-colors">Annual Transparency Report Cover</h4>
+<div class="flex items-center gap-2 text-xs font-label-sm text-on-surface-variant mt-1">
+<span>1920 × 1080 px</span>
+<span>•</span>
+<span>445 KB</span>
+<span>•</span>
+<span class="text-[#166534] font-semibold">WebP</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant truncate max-w-[160px]" title="Used in: BVC Firm Transparency Disclosure 2024">Used in: <span class="text-primary font-semibold">Annual Report</span></span>
+<span class="text-[10px] text-on-surface-variant">Apr 22, 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Controls Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing <span class="font-semibold text-primary">1–6</span> of <span class="font-semibold text-primary">142</span> photos in repository</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<button class="min-h-[44px] px-3 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface disabled:opacity-40 flex items-center gap-1" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="w-10 h-10 rounded bg-primary-container text-on-primary font-body-semibold flex items-center justify-center shadow-sm">1</button>
+<button class="w-10 h-10 rounded text-on-surface-variant hover:bg-surface-container flex items-center justify-center">2</button>
+<button class="w-10 h-10 rounded text-on-surface-variant hover:bg-surface-container flex items-center justify-center">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-10 h-10 rounded text-on-surface-variant hover:bg-surface-container flex items-center justify-center">12</button>
+<button class="min-h-[44px] px-3 py-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center gap-1">
+<span>Next</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Inspection Rail (4 columns on XL) -->
+<aside class="xl:col-span-4 w-full flex flex-col gap-space-md sticky top-28">
+<!-- Selected Image Detailed Inspector Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col border border-outline-variant">
+<div class="p-space-md border-b bg-surface-container-low/40 flex items-center justify-between border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">image_search</span>
+<h3 class="font-title text-title text-primary">Media Asset Inspector</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-xs font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold" id="inspector-badge">Active Selection</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Inspection Preview Thumbnail -->
+<div class="w-full aspect-[16/9] rounded-lg overflow-hidden bg-surface-container relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Preview of the currently selected media asset showing high-contrast chartered accounting boardroom with partners engaged in corporate review." id="inspector-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgl5qtTSi5jaTY0l0AM70kIjhQeZug6TJy4knjVLeX7uaufz1LfyeWo-8kwEQTSgjSY83W7KeqtzJPygFbGpUjiWFx2v2FFrmIuHyMsyDijqE7nxiK_qwQqKFaujtb4lfTVgbHM_uWtzcvUsNIlAvl8NWIBRHwkcZb7Dfk8yRQP9NxBibmXOTau2_xTz5HiaBWuPKBX9afgrBDqwvzi7uoxvtIIVVamAWhbnVFsNY">
+<div class="absolute bottom-2 right-2">
+<button class="min-h-[36px] px-2.5 bg-surface-container-lowest/90 backdrop-blur-sm text-primary rounded font-label-sm text-xs shadow flex items-center gap-1 hover:bg-surface-container-lowest" id="modal-zoom-btn">
+<span class="material-symbols-outlined text-sm">fullscreen</span>
+<span>Full View</span>
+</button>
+</div>
+</div>
+<!-- Metadata key-value list -->
+<div class="flex flex-col gap-space-xs text-label-sm">
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">WordPress Media ID</span>
+<span class="font-body-semibold text-primary" id="inspector-id">#48201</span>
+</div>
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">File Name</span>
+<span class="font-body text-xs text-on-surface truncate max-w-[200px]" id="inspector-filename" title="Boardroom Strategic Tax Review 2025">Boardroom Strategic Tax Review 2025</span>
+</div>
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">Physical Resolution</span>
+<span class="font-body text-on-surface" id="inspector-res">1920 x 1080 px</span>
+</div>
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">Compression &amp; Weight</span>
+<span class="font-body text-on-surface" id="inspector-weight">340 KB (Optimized WebP)</span>
+</div>
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">Uploaded On</span>
+<span class="font-body text-on-surface" id="inspector-date">May 14, 2025 by Staff Member</span>
+</div>
+<div class="flex justify-between py-1 border-b">
+<span class="text-on-surface-variant">Associated Post</span>
+<span class="font-body text-xs text-primary font-semibold truncate max-w-[190px]" id="inspector-post" title="Sample blog headline">Sample blog headline</span>
+</div>
+</div>
+<!-- WP REST URL field with copy button -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider">REST Full Resolution URL</label>
+<div class="flex items-center gap-1">
+<input class="w-full text-xs font-mono bg-surface-container-low text-on-surface-variant px-3 py-2 rounded focus:outline-none" id="inspector-url-input" readonly="" type="text" value="https://bvcglobal.com/wp-content/uploads/2025/05/tax-boardroom-strategic-deliberation.webp">
+<button class="min-h-[40px] px-3 bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-sm text-xs shrink-0 flex items-center justify-center" id="copy-url-btn" title="Copy URL">
+<span class="material-symbols-outlined text-base">content_copy</span>
+</button>
+</div>
+</div>
+<!-- WCAG 2.2 AA Alt Text Editor -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-xs text-on-surface font-semibold flex items-center gap-1" for="inspector-alt-input">
+<span>WCAG 2.2 AA Alt Text</span>
+<span class="material-symbols-outlined text-sm text-secondary" title="ICAI accessibility mandate requires meaningful alt descriptions for screen readers.">accessibility_new</span>
+</label>
+<span class="text-[10px] text-tertiary-fixed-dim bg-tertiary-container px-1.5 py-0.2 rounded font-semibold">Compliant</span>
+</div>
+<textarea class="w-full p-2.5 bg-surface-container-low text-on-surface text-label-sm rounded focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" id="inspector-alt-input" rows="3">Senior Chartered Accountants and partners seated around an oak boardroom table deliberating fiscal strategies, warm corporate lighting with architectural glass background.</textarea>
+<div class="flex justify-between items-center mt-1">
+<span class="text-[11px] text-on-surface-variant">148 chars (Recommended: 80-160)</span>
+<button class="min-h-[36px] px-3 py-1 bg-primary text-on-primary rounded text-xs font-label-sm hover:bg-primary-container transition-colors shadow-sm" id="save-alt-btn">
+                  Save Alt Text
+                </button>
+</div>
+</div>
+<!-- Action buttons: Download & Delete Safe Confirmation -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<a class="w-full min-h-[44px] bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" href="#" id="download-original-link">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download Optimized Original</span>
+</a>
+<button class="w-full min-h-[44px] bg-surface-container-lowest text-error hover:bg-error-container hover:text-on-error-container rounded font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" id="delete-trigger-btn">
+<span class="material-symbols-outlined text-base">delete</span>
+<span>Delete from WordPress Vault</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Media Storage & Utilization Widget -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title text-label-sm text-primary font-semibold">Media Pool Capacity</span>
+<span class="text-xs font-label-sm text-on-surface-variant">8.4 GB / 25 GB</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 33.6%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>Compression Savings: <strong>14.2 GB saved</strong></span>
+<span>REST Sync: <strong>Up to Date</strong></span>
+</div>
+</div>
+</aside>
+</div>
+<!-- ICAI Media Compliance & Copyright Notice -->
+
+</div>
+<!-- Modal Dialog 1: High-Fidelity Image Lightbox Preview -->
+<div class="fixed inset-0 z-50 bg-[#20252B]/70 backdrop-blur-sm hidden items-center justify-center p-space-md transition-opacity" id="lightbox-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-4xl w-full overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">aspect_ratio</span>
+<span class="font-title text-title text-primary" id="modal-title">Image Lightbox Preview</span>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface" id="close-modal-btn">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="p-space-md flex-1 overflow-auto flex items-center justify-center bg-surface-dim">
+<img class="max-h-[60vh] w-auto object-contain rounded shadow" data-alt="High resolution detailed inspection preview of the selected chartered firm media asset." id="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnyOcawB65KBlkJjEkUIbujS0UeOJt0xfEPoSatQoAicvFTkFzoXgBneq8eBVUttZNUuqR7wtpeXznjPcCpnTKhXl0hllrbw4g5M31WIRgTgJXF-3Q3mecWcJy5HHTz6mCP-5_GAS-R-41saOZo3sx8o3NrtwdZwFaEXHwc5cQeh2L8zMyCZNCe9Wb7s8t22BCPpvrcoiUqtKK-T4gABLiXXnqK-Ks99AqNr9NCuA">
+</div>
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-xs text-on-surface-variant">
+<div id="modal-meta-strip">1920 × 1080 px • 340 KB • WebP High Quality 0.82</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-semibold flex items-center gap-1" id="modal-copy-id">
+<span class="material-symbols-outlined text-sm">tag</span>
+<span>Copy WP ID</span>
+</button>
+<button class="px-4 py-1.5 bg-primary text-on-primary rounded font-semibold" id="modal-close-action">Done</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Dialog 2: Safe Delete Confirmation -->
+<div class="fixed inset-0 z-50 bg-[#20252B]/70 backdrop-blur-sm hidden items-center justify-center p-space-md" id="delete-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-2xl">warning</span>
+</div>
+<div class="text-center">
+<h4 class="font-title text-title text-primary">Permanent Media Deletion</h4>
+<p class="font-body text-label-sm text-on-surface-variant mt-1">
+          Are you sure you want to remove <strong class="text-on-surface" id="delete-asset-name">"Boardroom Strategic Tax Review 2025" (ID #48201)</strong> from the WordPress Media library? Articles currently embedding this asset will render broken image frames.
+        </p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded text-xs font-label-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-base">info</span>
+<span>This action communicates with the live WordPress REST API.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-xs">
+<button class="min-h-[44px] px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-sm text-label-sm" id="cancel-delete-btn">
+          Cancel &amp; Retain
+        </button>
+<button class="min-h-[44px] px-space-md bg-error hover:opacity-90 text-on-error rounded font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow" id="confirm-delete-btn">
+<span class="material-symbols-outlined text-base">delete_forever</span>
+<span>Confirm Delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none" id="toast-container"></div>
+</div>
+<script>
+  (function initMediaManager() {
+    const cards = document.querySelectorAll('.photo-card');
+    const inspectorBadge = document.getElementById('inspector-badge');
+    const inspectorTitle = document.getElementById('inspector-filename');
+    const inspectorId = document.getElementById('inspector-id');
+    const inspectorRes = document.getElementById('inspector-res');
+    const inspectorWeight = document.getElementById('inspector-weight');
+    const inspectorDate = document.getElementById('inspector-date');
+    const inspectorPost = document.getElementById('inspector-post');
+    const inspectorUrlInput = document.getElementById('inspector-url-input');
+    const inspectorAltInput = document.getElementById('inspector-alt-input');
+    const inspectorPreview = document.getElementById('inspector-preview');
+    const deleteAssetName = document.getElementById('delete-asset-name');
+
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const deleteModal = document.getElementById('delete-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalImg = document.getElementById('modal-img');
+    const modalMetaStrip = document.getElementById('modal-meta-strip');
+
+    let currentSelectedCard = cards[0];
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'pointer-events-auto px-4 py-3 rounded-lg shadow-lg flex items-center gap-2 text-label-sm text-xs font-semibold transition-all transform duration-300 ' + 
+        (type === 'success' ? 'bg-primary-container text-on-primary' : 'bg-surface-container-highest text-on-surface');
+      toast.innerHTML = `<span class="material-symbols-outlined text-sm">${type === 'success' ? 'check_circle' : 'info'}</span><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(10px)';
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    function selectCard(card) {
+      cards.forEach(c => c.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container-high/30'));
+      card.classList.add('ring-2', 'ring-primary-container');
+      currentSelectedCard = card;
+
+      const id = card.dataset.id;
+      const title = card.dataset.title;
+      const res = card.dataset.res;
+      const size = card.dataset.size;
+      const date = card.dataset.date;
+      const post = card.dataset.post;
+      const url = card.dataset.url;
+      const alt = card.dataset.alt;
+      const thumb = card.querySelector('img').src;
+
+      inspectorId.textContent = `#${id}`;
+      inspectorTitle.textContent = title;
+      inspectorTitle.title = title;
+      inspectorRes.textContent = res;
+      inspectorWeight.textContent = `${size} (Optimized WebP)`;
+      inspectorDate.textContent = `${date} by Staff Member`;
+      inspectorPost.textContent = post;
+      inspectorPost.title = post;
+      inspectorUrlInput.value = `https://bvcglobal.com${url}`;
+      inspectorAltInput.value = alt;
+      deleteAssetName.textContent = `"${title}" (ID #${id})`;
+      if (thumb) {
+        inspectorPreview.src = thumb;
+      }
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (!e.target.closest('button')) {
+          selectCard(card);
+        }
+      });
+
+      const inspectBtn = card.querySelector('.action-inspect');
+      if (inspectBtn) {
+        inspectBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          selectCard(card);
+          openLightbox();
+        });
+      }
+
+      const copyBtn = card.querySelector('.action-copy');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const fullUrl = `https://bvcglobal.com${card.dataset.url}`;
+          navigator.clipboard.writeText(fullUrl).then(() => {
+            showToast(`Copied REST URL for WP #${card.dataset.id}`);
+          });
+        });
+      }
+
+      const editAltBtn = card.querySelector('.action-edit-alt');
+      if (editAltBtn) {
+        editAltBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          selectCard(card);
+          inspectorAltInput.focus();
+          inspectorAltInput.select();
+        });
+      }
+    });
+
+    // Lightbox modal handlers
+    function openLightbox() {
+      if (!currentSelectedCard) return;
+      modalTitle.textContent = currentSelectedCard.dataset.title;
+      modalMetaStrip.textContent = `${currentSelectedCard.dataset.res} • ${currentSelectedCard.dataset.size} • WebP Q=0.82 • WP ID #${currentSelectedCard.dataset.id}`;
+      modalImg.src = currentSelectedCard.querySelector('img').src;
+      lightboxModal.classList.remove('hidden');
+      lightboxModal.classList.add('flex');
+    }
+
+    document.getElementById('modal-zoom-btn').addEventListener('click', openLightbox);
+    document.getElementById('close-modal-btn').addEventListener('click', () => {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+    });
+    document.getElementById('modal-close-action').addEventListener('click', () => {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+    });
+    document.getElementById('modal-copy-id').addEventListener('click', () => {
+      if (currentSelectedCard) {
+        navigator.clipboard.writeText(currentSelectedCard.dataset.id).then(() => {
+          showToast(`Copied Media ID: ${currentSelectedCard.dataset.id}`);
+        });
+      }
+    });
+
+    // Delete modal safe confirmation
+    const deleteTriggerBtn = document.getElementById('delete-trigger-btn');
+    const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+    const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+
+    deleteTriggerBtn.addEventListener('click', () => {
+      deleteModal.classList.remove('hidden');
+      deleteModal.classList.add('flex');
+    });
+
+    cancelDeleteBtn.addEventListener('click', () => {
+      deleteModal.classList.add('hidden');
+      deleteModal.classList.remove('flex');
+    });
+
+    confirmDeleteBtn.addEventListener('click', () => {
+      deleteModal.classList.add('hidden');
+      deleteModal.classList.remove('flex');
+      showToast(`Removed ID #${currentSelectedCard.dataset.id} from media library`);
+      currentSelectedCard.style.opacity = '0.3';
+      currentSelectedCard.style.pointerEvents = 'none';
+    });
+
+    // Copy URL from inspector
+    document.getElementById('copy-url-btn').addEventListener('click', () => {
+      inspectorUrlInput.select();
+      navigator.clipboard.writeText(inspectorUrlInput.value).then(() => {
+        showToast('WordPress REST media URL copied to clipboard');
+      });
+    });
+
+    // Save Alt Text
+    document.getElementById('save-alt-btn').addEventListener('click', () => {
+      currentSelectedCard.dataset.alt = inspectorAltInput.value;
+      showToast('WCAG 2.2 AA Alt text synced with WordPress meta');
+    });
+
+    // Toggle Dropzone button
+    const dropzoneArea = document.getElementById('dropzone-area');
+    document.getElementById('trigger-dropzone-toggle').addEventListener('click', () => {
+      dropzoneArea.classList.toggle('hidden');
+    });
+
+    // File input change simulation
+    document.getElementById('file-input').addEventListener('change', (e) => {
+      if (e.target.files && e.target.files.length > 0) {
+        showToast(`Processing ${e.target.files.length} images: resizing to max 1920px...`);
+      }
+    });
+
+    document.getElementById('upload-primary-btn').addEventListener('click', () => {
+      document.getElementById('file-input').click();
+    });
+
+    // Search simulation filter
+    const mediaSearch = document.getElementById('media-search');
+    mediaSearch.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      cards.forEach(card => {
+        const title = (card.dataset.title || '').toLowerCase();
+        const alt = (card.dataset.alt || '').toLowerCase();
+        const id = (card.dataset.id || '').toLowerCase();
+        if (title.includes(q) || alt.includes(q) || id.includes(q)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+
+    // Dismiss info card
+    document.getElementById('dismiss-pipeline').addEventListener('click', function() {
+      this.closest('.relative').remove();
+    });
+
+    // Select initial active card
+    if (cards.length > 0) {
+      selectCard(cards[0]);
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant py-space-lg"><div class="w-full px-margin flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div>© 2024 BVC &amp; Co. Chartered Accountants. All rights reserved. Content Management System.</div><div class="flex items-center gap-space-lg"><span class="text-xs">Tax &amp; Advisory Publishing Engine</span><a class="text-primary hover:underline" data-path="settings-admin" href="#">Compliance Policies</a></div></div></footer>
+
+</body></html>
