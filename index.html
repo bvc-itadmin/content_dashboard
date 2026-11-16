@@ -24,7 +24,7 @@
 <!-- Role Authorization Notice Capsule -->
 
 <!-- Authentication Form -->
-<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); location.href='home_dashboard/code.html'; return false;">
+<form class="flex flex-col gap-space-md" novalidate><div id="login-error" role="alert" hidden class="rounded-lg border border-error bg-error-container text-on-error-container px-space-md py-space-sm font-label-sm text-label-sm"></div>
 <!-- Identity Input Module -->
 <div class="flex flex-col gap-space-xs">
 <label class="font-body-semibold text-body-semibold text-on-surface flex items-center justify-between" for="staff-email">
@@ -131,4 +131,4 @@
 
 
 
-</body></html>
+<script src="assets/login.js"></script></body></html>

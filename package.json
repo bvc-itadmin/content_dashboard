@@ -1,0 +1,10 @@
+{
+  "name": "bvc-content-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Separate publishing dashboard for bvcglobal.com. Signs people in and publishes through the website's private dashboard API.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node dev-server.js"
+  }
+}
