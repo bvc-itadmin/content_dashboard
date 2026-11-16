@@ -92,39 +92,7 @@
         });
       }
 
-      if (submitBtn) {
-        submitBtn.addEventListener('click', function (e) {
-          e.preventDefault();
-          const emailInput = document.getElementById('staff-email');
-          if (!emailInput || !pwdInput) return;
-
-          if (!emailInput.value) {
-            emailInput.focus();
-            return;
-          }
-          if (!pwdInput.value) {
-            pwdInput.focus();
-            return;
-          }
-
-          // Visual loading state demonstration
-          const origHtml = submitBtn.innerHTML;
-          submitBtn.innerHTML = `
-            <span class="material-symbols-outlined animate-spin text-[20px]">sync</span>
-            <span>Verifying Institutional Credentials...</span>
-          `;
-          submitBtn.disabled = true;
-
-          setTimeout(() => {
-            submitBtn.innerHTML = `
-              <span class="material-symbols-outlined text-[20px]">check_circle</span>
-              <span>Credentials Authorized • Launching Workspace...</span>
-            `;
-            submitBtn.classList.remove('bg-primary-container');
-            submitBtn.classList.add('bg-tertiary-container');
-          }, 1100);
-        });
-      }
+      /* The real sign-in is in assets/login.js (it checks the password with the website). */
     })();
   </script>
 </div></main><footer class="w-full border-t border-outline-variant/30 bg-surface-container-low py-space-md px-margin-mobile lg:px-margin"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span>© 2026 BVC &amp; Co. Chartered Accountants. All rights reserved.</span></div></div></footer>
